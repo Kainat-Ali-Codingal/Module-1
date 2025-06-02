@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 Activity 2</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <h2>Activity 2: Grouping Related Items in Form</h2>
+    <form>
+        <!-- The fieldset tag is used to group related elements in a form and draws a box around them-->
+         <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name: </label><br>
+            <input type="text" placeholder="Enter your name" id="name">
+            <br><br>
+
+            <label>Email: </label><br>
+            <input type="email" placeholder="Enter your email" id="email">
+            <br><br>
+
+            <label>Phone Number: </label><br>
+            <!-- Using type password to keep number hidden -->
+            <input type="password" placeholder="Enter your phone number" id="phone">
+            <br><br>
+
+            <label>Gender: </label><br>
+            <input type="radio" id="male" name="gender" value="male">Male<br>
+            <input type="radio" id="female" name="gender" value="female">Female<br>
+            
+            <br>
+            <label>Favourite City: </label><br>
+            <input type="checkbox" id="city1" name="city" value="city1">Islamabad<br>
+            <input type="checkbox" id="city2" name="city" value="city2">Rawalpindi<br>
+            <input type="checkbox" id="city3" name="city" value="city3">Lahore<br>
+            <input type="checkbox" id="city4" name="city" value="city4">Karachi<br>
+
+            <br>
+            <input type="submit"> 
+         </fieldset>     
+    </form>
+</body>
+</html>

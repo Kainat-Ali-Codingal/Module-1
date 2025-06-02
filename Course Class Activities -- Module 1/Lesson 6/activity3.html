@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 Activity 3</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <h2>Activity 3: Drop Down and Average</h2>
+    <!-- onInput here is using the id of my elemnts to calculate the average -->
+    <form oninput="x.value=(parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3">
+        <fieldset>
+            <legend>Marks Calculation</legend>
+            <!-- it’s a JavaScript calculation that updates the <output> element live as the user types -->
+            <!-- if we submitted the code through button, then we would get error trying to sent it to a file which oes not exist -->
+            <!-- the onInput in basic live JS calculation that happens as soon as we enter anything is any field -->
+            <!-- the reason that output only appears once data is in all fields is because when even one field is empty, it returns NaN on calculations -->
+            <!-- which in turns makes the entire output as NaN and nothing shows -->
+            <label>Name</label><br>
+            <input type="text" id="name" placeholder="Enter student name"><br><br>
+
+            <label>Enter Marks</label><br>
+            <select name="Subject1" id="subject1">
+                <option value="Maths">Maths</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+            </select>
+            <!-- type: Specifies the kind of data the input should accept -->
+            <!-- id: (Client-side only) Gives a unique identifier to the element in the document. This is used for styling (CSS), linking with labels, or scripting (JavaScript). -->
+            <!-- name: (PHP, Node, Flask, Django, etc.) Gives a name to the input so it can be identified when the form is submitted. 
+             This is the key sent to the server along with the user's input (this is the key in php) -->
+            <input type="number" id="m1" name="m1"><br><br>
+
+            <select name="Subject2" id="subject2">
+                <option value="Maths">Maths</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+            </select>
+            <input type="number" id="m2" name="m2"><br><br>
+
+            <select name="Subject3" id="subject3">
+                <option value="Maths">Maths</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+            </select>
+            <input type="number" id="m3" name="m3"><br><br>
+
+            <p>Average: <output name="x" for="m1 m2 m3"></output></p>
+        </fieldset>     
+    </form>
+</body>
+</html>
+
